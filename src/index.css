@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Gilroy Light', sans-serif;
+  src: url('../src/assets/fonts/gilroy-light.woff') format('woff'),
+       url('../src/assets/fonts/gilroy-light.otf') format('otf'),
+       url('../src/assets/fonts/gilroy-light.ttf') format('ttf');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy Regular', sans-serif;
+  src: url('../src/assets/fonts/gilroy-regular.woff') format('woff'),
+       url('../src/assets/fonts/gilroy-regular.otf') format('otf'),
+       url('../src/assets/fonts/gilroy-regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy Medium', sans-serif;
+  src: url('../src/assets/fonts/gilroy-medium.woff') format('woff'),
+       url('../src/assets/fonts/gilroy-medium.otf') format('otf'),
+       url('../src/assets/fonts/gilroy-medium.ttf') format('ttf');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy Bold', sans-serif;
+  src: url('../src/assets/fonts/gilroy-bold.woff') format('woff'),
+       url('../src/assets/fonts/gilroy-bold.otf') format('otf'),
+       url('../src/assets/fonts/gilroy-bold.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy Heavy', sans-serif;
+  src: url('../src/assets/fonts/gilroy-heavy.woff') format('woff'),
+       url('../src/assets/fonts/gilroy-heavy.otf') format('otf'),
+       url('../src/assets/fonts/gilroy-heavy.ttf') format('ttf');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Chronicle Display Light Italic', 'Serif Display', serif;
+  src: url('../src/assets/fonts/chronicle-display-light-italic.woff') format('woff'),
+       url('../src/assets/fonts/chronicle-display-light-italic.otf') format('otf'),
+       url('../src/assets/fonts/chronicle-display-light-italic.ttf') format('ttf');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Chronicle Display Roman', 'Serif Display', serif;
+  src: url('../src/assets/fonts/chronicle-display-roman.woff') format('woff'),
+       url('../src/assets/fonts/chronicle-display-roman.otf') format('otf'),
+       url('../src/assets/fonts/chronicle-display-roman.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Chronicle Display Semi Bold', 'Serif Display', serif;
+  src: url('../src/assets/fonts/chronicle-display-semibold.woff') format('woff'),
+       url('../src/assets/fonts/chronicle-display-semibold.otf') format('otf'),
+       url('../src/assets/fonts/chronicle-display-semibold.ttf') format('ttf');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Chronicle Display Black', 'Serif Display', serif;
+  src: url('../src/assets/fonts/chronicle-display-black.woff') format('woff'),
+       url('../src/assets/fonts/chronicle-display-black.otf') format('otf'),
+       url('../src/assets/fonts/chronicle-display-black.ttf') format('ttf');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root{
+  --containermax:1400px;
+  --container-width:calc(100% - 160px);
+  --navfontfamily: 'Gilroy Bold', 'Sans serif', 'Arial', sans-serif;
+  --navhover: #fbd784;
+  --navhovermove: -2px;
+  --readhovermove: 2px;
+  --herowidth: 790px;
+  --mainheadingfont: 'Chronicle Display Semi Bold', 'Serif Display', serif;
+  --contentnumber: 200px;
+}
+
+body {
+  margin: 0;
+  background: #0b1d26;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.gradient-bg{
+  background-image: linear-gradient(135deg, #0b1d26, transparent 87%);
+  opacity: 0.6;
+}
+
+/* .tagline .linetag{
+    width: 72px;
+    height: 2px;
+    margin-right: 24px;
+    background-color: #fbd784;
+} */
+
+@media screen and (max-width:991px) {
+  :root{
+    --container-width:calc(100% - 100px);
+    --herowidth: calc(100% - 100px);
+  }
+}
+
+@media screen and (max-width:767px) {
+  :root{
+    --container-width:calc(100% - 48px);
+    --herowidth: calc(100% - 48px);
+  }
+}
